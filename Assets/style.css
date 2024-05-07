@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PeckhamPress'; 
-  src: url('/Assets/Font/PeckhamPress-Trial.woff2') format('woff2'), 
+  src: url('Font/PeckhamPress-Trial.woff2') format('woff2'), 
 }
 
 *, 

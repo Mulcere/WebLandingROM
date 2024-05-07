@@ -1,0 +1,863 @@
+@font-face {
+  font-family: 'PeckhamPress'; 
+  src: url('/ROM/Assets/Font/PeckhamPress-Trial.woff2') format('woff2'), 
+}
+
+*, 
+*::before
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	display: block;
+}
+
+head {
+	display: none;
+}
+
+
+figcaption, footer, header,
+nav, section, main {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p,
+pre, a, code, img, samp, strong, sub,
+sup, var, b, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead,
+tr, th, td, mark {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%; 
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #808080;
+	background-color: black;
+}
+
+:root {
+  --container-width: 1200px;
+  --container-padding-x: 15px;
+  --transition-duration: 0.2s;
+}
+
+.banner,
+.massage-gun,
+.different-sec,
+.benefit-sec,
+.include-sec,
+.footer  {
+	margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 70px;
+}
+
+
+/* ====== HEADER ====== */
+
+.logo-container {
+	margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  height: auto; 
+  margin-top: 55px; 
+}
+
+.logo-container img {
+	height: 72px;
+	width: 160px;
+}
+
+/* ====== BANNER  ====== */
+
+.banner-left {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 564px; 
+	gap: 44px;
+}
+
+.heading {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+h1 {
+  font-family: 'PeckhamPress', sans-serif; 
+  font-size: 58px; 
+  color: white; 
+	line-height: 107%; 
+	letter-spacing: 1.16px;
+  text-align: left; 
+}
+
+.heading-subtitle {
+	display: block;
+	width: 443px;
+	height: auto;
+}
+
+p {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 18px; 
+  font-weight: 500; 
+  text-align: left; 
+}
+
+.details {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	gap: 15px;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	gap: 11px;
+}
+
+.text-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	gap: 10px; 
+	margin-top: 8px;
+}
+
+.large-text {
+	font-family: "Inter", sans-serif; 
+  color: white; 
+	line-height: 96.7%;
+  font-size: 34px; 
+  font-weight: 900;
+}
+
+.small-text {
+	font-family: "Inter", sans-serif; 
+  color: white; 
+	line-height: 120%;
+  font-size: 20px; 
+  font-weight: 500; 
+}
+
+.bottom-text{
+  font-size: 16px; 
+}
+
+.loyal-customers {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	gap: 11px; 
+	margin-top: 8px;
+}
+
+.rating {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	gap: 6px; 
+}
+
+.star-container {
+	width: 198px; 
+  height: 46px; 
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+  background-color: #2BF6FA; 
+	color: black;
+  height: 60px;
+  width: 190px; 
+  border: none;
+	cursor: pointer;
+
+	transition: .1s linear, color .1s linear;
+}
+
+.button:hover {
+	background-color: #0EBBBE;
+	color: white;
+}
+
+.buy-now {
+	font-family: "Inter", sans-serif;
+	text-transform: uppercase;
+  font-size: 22px; 
+  font-weight: 700; 
+}
+
+.trial {
+	font-family: "Inter", sans-serif;
+  font-size: 10px; 
+  font-weight: 600; 
+}
+
+.btm-text {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	gap: 13px;
+	width: 296px;
+}
+
+.pay-text {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.free-text{
+	color: #2BF6FA;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.pay-option {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	gap: 13px;
+}
+
+.after-pay {
+	width: 172px; 
+  height: 42px; 
+}
+
+.zip {
+	width: 98px; 
+  height: 41px; 
+}
+
+.banner-right {
+	width: 584px; 
+	height: 818px;
+}
+
+
+/* ====== MASSAGE-GUN  ====== */
+
+.massage-gun {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 36px; 
+}
+
+.banner-btm {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 64px;
+}
+
+.guarantee {
+	width: 160px;
+	height: 160px;
+}
+
+.express {
+	width: 257px;
+	height: 73px;
+}
+
+.trusted {
+	width: 145px;
+	height: 171px;
+}
+
+h2 {
+	font-family: 'PeckhamPress', sans-serif;
+  font-size: 107px;
+  color: white;
+	opacity: .1;
+	line-height: 120%;
+  text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* ====== DIFFERENT-SEC  ====== */
+
+.pressure-gun {
+	width: 495px;
+	height: 486px;
+}
+
+.main-content,
+.benefit-content {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 640px; 
+	height: auto;
+	gap: 30px;
+}
+
+h3 {
+	font-family: 'PeckhamPress', sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+	line-height: 124%;
+  text-transform: uppercase;
+}
+
+.all-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+	gap: 19px;
+}
+
+.frame {
+	display: flex;
+	align-items: center; 
+	justify-content: flex-start; 
+	width: 280px;
+}
+
+.points {
+	margin-left: 12px;
+	font-weight: 400;
+	line-height: 1.485em;
+}
+
+.icon {
+	width: 49px; 
+	height: 49px; 
+}
+
+/* ====== BENEFIT-SEC  ====== */
+
+h4 {
+	font-family: 'PeckhamPress', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.benefit-img {
+	width: 484px;
+	height: 423px;
+}
+
+/* ====== CAROUSEL  ====== */
+
+.carousel {
+	position: absolute;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.carousel-inner {
+	display: flex;
+	transition: transform 0.5s ease-in-out; 
+}
+
+.carousel-item {
+	flex: none;
+	width: 100%; 
+}
+
+.carousel-controls {
+	position: absolute;
+	bottom: 44px;
+	left: 50%; 
+	transform: translateX(-50%);
+	display: flex; 
+	gap: 8px;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 50%;
+	cursor: pointer; 
+}
+
+.dot.active {
+	background-color: #2BF6FA;
+	opacity: 1;
+}
+
+/* ====== INCLUDE-SEC  ====== */
+
+.include-sec {
+	padding-top: 572px;
+}
+
+.include-img {
+	width: 47%;
+	height: auto;
+}
+
+.include-content {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	gap: 50px;
+	width: 540px;
+	height: auto;
+}
+
+h5 {
+	font-family: 'PeckhamPress', sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+	line-height: 1.24em;
+  text-transform: uppercase;
+}
+
+ul {
+	margin-left: 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.66em;
+}
+
+/* ====== FOOTER  ====== */
+
+.footer  {
+	margin-inline: auto;
+  padding-inline: 0;
+  max-width: 100%;
+	padding-bottom: 70px;
+}
+
+.recovery {
+	width: 100%; 
+	height: auto; 
+}
+
+.video-container
+.video {
+	width: 100%; 
+	height: auto;
+}
+
+.footer-extra {
+  max-width: 100%;
+  margin: 35px 0; 
+	text-align: center; 
+
+}
+
+.footer-copyright {
+	font-family: "Inter", sans-serif; 
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1919px) {
+	.include-sec {
+		padding-top: 950px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.include-sec {
+		padding-top: 832px;
+	}
+}
+
+@media (max-width: 1280px) {
+
+	.include-sec {
+		padding-top: 750px;
+	}
+
+	h1 {
+		font-size: 46px;
+	}
+
+	p {
+		font-size: 14px;		
+	}
+
+	.banner-right {
+		width: 99%; 
+		height: auto;
+	}
+
+	.include-content {
+		width: 520px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.include-sec {
+		padding-top: 640px;
+	}
+
+	
+}
+
+@media (max-width: 992px) {
+
+	body {
+		font-size: 12px;
+	}
+	
+	.logo-container img {
+		height: auto;
+		width: 20%;
+	}
+
+	.banner-left {
+		top: 26px;
+		width: 388px; 
+		gap: 30px;
+	}
+
+	.heading {
+		width: 388px;
+	}
+
+	.heading-subtitle {
+		width: 316px;
+	}
+
+	p,
+	ul,
+	.footer-copyright  {
+		font-size: 14px;		
+	}
+
+	.large-text,
+	h3,
+	h5 {
+		font-size: 24px;		
+	}
+
+	.small-text,
+	.bottom-text {
+		font-size: 10px;		
+	}
+
+	.star-container {
+		margin-top: 2px;
+		width: 145px; 
+		height: 34px;
+	}
+
+	.button {
+		height: 50px;
+		width: 160px; 
+	}
+
+	.buy-now {
+		font-size: 18px; 
+	}
+	
+	.trial {
+		font-size: 8px; 
+	}
+
+	.pay-text {
+		font-size: 10px;
+	}
+	
+	.free-text{
+		font-size: 12px;
+	}
+
+	.btm-text {
+		width: 207px;
+	}
+	
+	.after-pay {
+		width: 119px; 
+		height: 30px; 
+	}
+
+	.zip {
+		width: 68px; 
+		height: 28px; 
+	}
+
+	.banner-right {
+		width: 50%; 
+		height: auto;
+	}
+	
+	.banner-btm {
+		gap: 50px;
+	}
+
+	.guarantee {
+		width: 110px;
+		height: 110px;
+	}
+	
+	.express {
+		width: 172px;
+		height: 50px;
+	}
+	
+	.trusted {
+		width: 100px;
+		height: 118px;
+	}
+
+	h2 {
+		font-size: 80px;
+	}
+
+	.pressure-gun {
+		width: 40%;
+		height: auto;
+	}
+
+	.main-content,
+	.benefit-content {
+		width: 478px; 
+	}
+
+	.all-points {
+		gap: 9px;
+	}
+
+	.frame {
+		width: 233px;
+	}
+
+	.icon {
+		width: 35px; 
+		height: 35px; 
+	}
+
+	h4 {
+		font-size: 34px;
+	}
+
+	.benefit-img {
+		width: 40%;
+		height: auto;
+	}
+	
+	.carousel-controls {
+		bottom: 30px;
+	}
+
+	.dot {
+		width: 8px;
+		height: 8px;
+	}
+
+	.include-img {
+		width: 45%;
+		height: auto;
+	}
+
+	.include-sec {
+		padding-top: 600px;
+	}
+
+	.include-content {
+		width: 400px;
+	}
+
+
+}
+
+@media (max-width: 768px) {
+
+	body {
+		font-size: 10px;
+	}
+
+	.logo-container {
+		margin-top: 30px;
+	}
+
+	.logo-container img {
+		height: auto;
+		width: 20%;
+	}
+
+	.banner-left {
+		top: 29px;
+		width: 318px; 
+	}
+
+	.heading {
+		width: 318px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	.heading-subtitle {
+		width: 251px;
+	}
+
+	p,
+	ul,
+	.footer-copyright  {
+		font-size: 12px;		
+	}
+
+	.large-text,
+	h3,
+	h5 {
+		font-size: 20px;		
+	}
+
+	.small-text,
+	.bottom-text {
+		font-size: 8px;		
+	}
+
+	.rating {
+		margin-top: 4px;
+	}
+	
+	.star-container {
+		margin-top: 0;
+		width: 115px; 
+		height: 27px;
+	}
+
+	.button {
+		height: 46px;
+		width: 140px; 
+	}
+
+	.buy-now {
+		font-size: 15px; 
+	}
+	
+	.trial {
+		font-size: 7px; 
+	}
+
+	.btm-text {
+		width: 178px;
+	}
+
+	.after-pay {
+		width: 108px; 
+		height: 27px; 
+	}
+
+	.zip {
+		width: 57px; 
+		height: 23px; 
+	}
+
+	.banner-btm {
+		gap: 35px;
+	}
+
+	.guarantee {
+		width: 90px;
+		height: 90px;
+	}
+	
+	.express {
+		width: 168px;
+		height: 49px;
+	}
+	
+	.trusted {
+		width: 79px;
+		height: 94px;
+	}
+
+	h2 {
+		font-size: 62px;
+	}
+
+	.pressure-gun {
+		width: 35%;
+		height: auto;
+	}
+
+	.main-content,
+	.benefit-content {
+		width: 389px; 
+	}
+
+	.all-points {
+		width: 393px;
+		gap: 5px;
+	}
+
+	.frame { 
+		width: 155px;
+	}
+
+	.icon {
+		width: 25px; 
+		height: 25px; 
+	}
+
+	h4 {
+		font-size: 26px;
+	}
+
+	.benefit-img {
+		width: 50%;
+		height: auto;
+	}
+
+	.carousel-controls {
+		bottom: 20px;
+	}
+
+	.include-img {
+		width: 45%;
+		height: auto;
+	}
+
+	.include-sec {
+		padding-top: 470px;
+	}
+
+	.include-content {
+		width: 50%;
+		gap: 25px;
+	}
+		
+}
+
+
+

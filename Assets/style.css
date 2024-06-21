@@ -392,7 +392,7 @@ h4 {
 }
 
 .carousel-controls {
-	position: absolute;
+
 	bottom: 44px;
 	left: 50%; 
 	transform: translateX(-50%);
@@ -460,12 +460,8 @@ ul {
 	padding-bottom: 70px;
 }
 
-.recovery {
-	width: 100%; 
-	height: auto; 
-}
-
-.video-container
+.recovery
+.video-container,
 .video {
 	width: 100%; 
 	height: auto;
@@ -485,10 +481,11 @@ ul {
 	text-transform: uppercase;
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 3840px) {
 	.include-sec {
 		padding-top: 950px;
 	}
+
 }
 
 @media (max-width: 1440px) {
@@ -517,7 +514,7 @@ ul {
 	}
 
 	.include-content {
-		width: 520px;
+		width: 100%;
 	}
 }
 
@@ -691,7 +688,7 @@ ul {
 	}
 
 	.include-content {
-		width: 400px;
+		width: 100%;
 	}
 
 
@@ -729,6 +726,10 @@ ul {
 		width: 251px;
 	}
 
+	.banner-right {
+		display: none;
+	}
+
 	p,
 	ul,
 	.footer-copyright  {
@@ -738,7 +739,7 @@ ul {
 	.large-text,
 	h3,
 	h5 {
-		font-size: 20px;		
+		font-size: 18px;		
 	}
 
 	.small-text,
@@ -784,45 +785,38 @@ ul {
 	}
 
 	.banner-btm {
-		gap: 35px;
+		gap: 0px;
 	}
 
-	.guarantee {
-		width: 90px;
-		height: 90px;
-	}
-	
-	.express {
-		width: 168px;
-		height: 49px;
-	}
-	
+	.guarantee,
+	.express, 
 	.trusted {
-		width: 79px;
-		height: 94px;
+		width: 30%;
+		height: 30%;
 	}
 
 	h2 {
-		font-size: 62px;
+		font-size: 40px;
 	}
 
 	.pressure-gun {
+		display: none;
 		width: 35%;
 		height: auto;
 	}
 
 	.main-content,
 	.benefit-content {
-		width: 389px; 
+		width: 100%; 
 	}
 
+	.h3 {
+		font-size: 200px;
+	}
+	
 	.all-points {
-		width: 393px;
+		width: 100%;
 		gap: 5px;
-	}
-
-	.frame { 
-		width: 155px;
 	}
 
 	.icon {
@@ -835,6 +829,7 @@ ul {
 	}
 
 	.benefit-img {
+		display: none;
 		width: 50%;
 		height: auto;
 	}
@@ -844,20 +839,19 @@ ul {
 	}
 
 	.include-img {
+		display: none;
 		width: 45%;
 		height: auto;
 	}
 
 	.include-sec {
-		padding-top: 470px;
+		padding-top: 300px;
 	}
 
 	.include-content {
-		width: 50%;
 		gap: 25px;
 	}
-		
+	
 }
-
 
 
